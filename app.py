@@ -325,7 +325,7 @@ def main():
         ]])
 
         output=round(prediction[0],2)
-        print("dur hours: ",duration_hours,"dur mins: ",duration_mins)
+#         print("dur hours: ",duration_hours,"dur mins: ",duration_mins)
 
 
         return render_template('index.html' , prediction = "Fare is Rs. {}".format(output))
