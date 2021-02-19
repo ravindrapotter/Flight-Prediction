@@ -1,0 +1,184 @@
+body {
+    margin:0;
+    padding:0;
+    background:linear-gradient(to right, #98d0f0,#61a3f0);
+    font-family: sans-serif;
+}
+.navbar {
+    background:linear-gradient(to right, #f174a8,#f12b7e);
+    height : 49px;
+    text-align: center;
+    margin :0;
+    
+}
+.navbar a {
+    display : inline-block;
+    padding : 8px 25px;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+.navbar:hover{
+    background:linear-gradient(to right, #eb4444,#f11818);
+}
+.main_form {
+    color: whitesmoke;
+    padding: 10px;
+    width : 800px;
+    background-color: rgba(9, 194, 240, 0.8);
+    margin:auto;
+    border-radius: 15px;
+}
+
+.row_1 {
+    height: 150px; 
+    
+}
+.row_2{
+    margin-top: 40px;
+    height: 150px;
+}
+.row_3{
+    margin-top: 40px;
+    height: 150px;
+}
+#row_11 {
+    padding:10px;
+    width:380px;
+    background-color: rgb(238, 124, 238);
+    height: 150px;  
+    float:left; 
+    border-radius: 20px;
+}
+#row_12 { 
+    padding:10px;
+    margin-left: 10px;
+    width:370px;
+    height: 150px;   
+    background-color: rgb(212, 88, 236);
+    float:left;
+    border-radius: 20px;
+}
+#departure {
+    margin-top:30px;
+    margin-left:120px;
+}
+#arrival {
+    margin-top:30px;
+    margin-left:130px;
+}
+#Departure_time,#Arr_time {
+    background-color: #d8e8f3;
+    margin-left:80px;
+}
+#source {
+    margin-top:30px;
+    margin-left:140px;
+}
+#destination {
+    margin-top:30px;
+    margin-left:120px;
+}
+#Source {
+    background-color: #d8e8f3;
+    margin-left:145px;
+}
+#Destination {
+    background-color: #d8e8f3;
+    margin-left:135px;
+}
+
+#stop {
+    margin-top:30px;
+    margin-left:120px;
+}
+#airline {
+    margin-top:30px;
+    margin-left:100px;
+}
+#Stop {
+    background-color: #d8e8f3;
+    margin-left:134px;
+}
+#Airline {
+    background-color: #d8e8f3;
+    margin-left:70px;
+}
+
+.row_21 {
+    padding:10px;
+   
+    width:380px;
+    background-color: rgb(144, 82, 224);
+    height: 150px;  
+    float:left; 
+    border-radius: 20px;
+}
+.row_22 { 
+    padding:10px;
+    margin-left: 10px;
+    width:370px;
+    height: 150px;   
+    background-color: rgb(134, 54, 238);
+    float:left;
+    border-radius: 20px;
+}
+
+.row_31 {
+    padding:10px;
+   
+    width:380px;
+    background-color: rgb(240, 107, 107);
+    height: 150px;  
+    float:left; 
+    border-radius: 20px;
+}
+.row_32 { 
+    padding:10px;
+    margin-left: 10px;
+    width:370px;
+    height: 150px;   
+    background-color: rgb(236, 38, 81);
+    float:left;
+    border-radius: 20px;
+}
+#button {
+    margin-top: 40px;
+    margin-left:20px;
+}
+button {
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    color:rgb(240, 235, 236);
+    background-color: #f12b7e;
+    border:2px solid rgba(43, 2, 37, 0.9);
+   
+}
+button:hover {
+    background-color: #2be4f1;
+    color:rgb(12, 1, 3);
+}
+#message {
+    
+    margin-top: -55px;
+    margin-left: 700px;
+    float:left;
+}
+#Fare {
+    float:left;
+    background-color: #f1260b;
+    height:18px;
+    margin-top: -55px;
+    margin-left: 300px;
+    border-radius: 7px;
+    width:250px;
+    text-align: center;
+    padding:10px;
+}
+#Fare p {
+    margin-top: 2px;
+}
+

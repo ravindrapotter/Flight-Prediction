@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='main.css')}}">
+
+<title>Flight Fare Prediction</title>
+</head>
+
+<body>
+<div class = "navbar">
+    <a href = "/">Flight Fare Prediction</a>
+</div>
+<br>
+<div class="main_form">
+    <form action = "/" , method = "post">
+        <div class = "row_1">
+            <div id = "row_11">
+            <h2 id = "departure">Departure</h2>
+            <input type="datetime-local" name="Departure_time" id="Departure_time" required="required">
+        </div>
+            <div id = "row_12">
+            <h2 id ="arrival">Arrival</h2>
+            <input type="datetime-local" name="Arr_time" id="Arr_time" required="required">
+        </div>
+        </div>
+        <div class = "row_2">
+            <div class = "row_21">
+            <h2 id= "source">Source</h2>
+            <select name="Source" id="Source" required="required">
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </div>
+            <div class = "row_22">
+            <h2 id = "destination">Destination</h2>
+            <select name="Destination" id="Destination" required="required">
+                <option value="Cochin">Cochin</option>
+                <option value="Delhi">Delhi</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </div>
+        </div>
+        <div class = "row_3">
+            <div class = "row_31">
+            <h2 id="stop">Stopages</h2>
+            <select name="stops" id="Stop" required="required">
+                
+                <option value="0" >Non-Stop</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+            <div class = "row_32">
+            <h2 id = "airline">Airline's Name</h2>
+            <select name="airline" id="Airline" required="required">
+                <option value="Jet Airways">Jet Airways</option>
+                <option value="IndiGo">IndiGo</option>
+                <option value="Air India">Air India</option>
+                <option value="Multiple carriers">Multiple carriers</option>
+                <option value="SpiceJet">SpiceJet</option>
+                <option value="Vistara">Vistara</option>
+                <option value="Air Asia">Air Asia</option>
+                <option value="GoAir">GoAir</option>
+                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                </option>
+                <option value="Jet Airways Business">Jet Airways Business</option>
+                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                <option value="Trujet">Trujet</option>
+            </select>
+        </div>
+        </div>
+        <div id="button">
+         <button  type="submit">Predict</button>
+         
+        </div>
+    </form>
+    <br>
+    {% if prediction|length > 0 %}
+    <div id="Fare">
+    
+    <p>{{prediction}}</p>
+       </div>
+       {% endif %}
+   <div id="message">
+    
+    <p>©2021 RP</p>
+   </div>
+</div>
+</body>
+</html>
